@@ -1,0 +1,7 @@
+#!/bin/bash
+
+pip install jupyterlab
+curl -LO https://github.com/dflib/jjava/releases/download/1.0-a4/jjava-1.0-a4-kernelspec.zip
+mkdir jjava-1.0-a4-kernelspec
+unzip jjava-1.0-a4-kernelspec.zip -d jjava-1.0-a4-kernelspec
+jupyter kernelspec install jjava-1.0-a4-kernelspec --user --name=java
